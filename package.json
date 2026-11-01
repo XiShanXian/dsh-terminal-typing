@@ -1,0 +1,46 @@
+{
+  "name": "dsh-diy-terminal-typing",
+  "version": "0.8.0",
+  "description": "把 LLM 发起的工具调用变成打字动画：DSH 界面角落浮现一块 99 键迷你键盘，命令被逐字敲出来、对应键位高亮",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib"
+  ],
+  "dsh": {
+    "client": {
+      "platform": "web"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek",
+    "deepseek-harness",
+    "cordis",
+    "terminal",
+    "animation",
+    "keyboard"
+  ],
+  "homepage": "https://github.com/XiShanXian/dsh-terminal-typing#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XiShanXian/dsh-terminal-typing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/XiShanXian/dsh-terminal-typing/issues"
+  },
+  "author": "XiShanXian",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node tests/test_plugin.mjs && node tests/test_client.mjs"
+  }
+}
